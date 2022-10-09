@@ -417,7 +417,6 @@ h6,
   color: rgb(255, 255, 255);
   letter-spacing:-1px;
   margin: 1rem;
-  
 }
 
 .img-intro{
@@ -492,7 +491,7 @@ h6,
 	font-size: 7vw;
 }
 
-.menu__item-link,
+.menu__item-link
  {
 	white-space: nowrap;
 	font-size: 7vw;
