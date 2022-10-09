@@ -426,18 +426,7 @@ h6,
   height: auto;
 }
 
-.h1 {
 
-  flex: 1;
-  position: relative;
-  text-align: center;
-  margin: 0;
-  -webkit-text-fill-color: transparent;
-  background-image: url("https://i.gifer.com/2I3c.gif");
-  background-size: cover;
-  -webkit-background-clip: text;
-  background-repeat: no-repeat;
-}
 
 .body {
 	margin: 0;
