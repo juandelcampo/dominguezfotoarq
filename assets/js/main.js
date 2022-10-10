@@ -99,3 +99,7 @@
 })()
 
 //------------
+$(document).ready(function(){
+  $('img').attr('src', 'https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/08/1407310358spinner-cropped.gif');
+});
+
