@@ -3,7 +3,9 @@ html, body {
   width: 100%;
   height: 100%;
 }
-
+html{
+  overflow-x:hidden;
+}
 a {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -442,22 +444,39 @@ h6,
 }
 
 .img-river{
-  width: 80%;
+  width: 60%;
   position: relative;
  text-align: center;
 }
 
+.img-river2{
+  width: 35%;
+  position: relative;
+ text-align: center;
+ padding-top: 2%;
+}
 
-#imageindex {
-   
-  transition: all 2s ease-in-out;
+.img-river3{
+  width: 40%;
+  position: relative;
+ text-align: center;
  
 }
 
+.pr-10 {
+  padding-right: 4%;
+}
+
+.pt-10 {
+  padding-top: 4%;
+}
+
+#imageindex {
+  transition: all 2s ease-in-out;
+}
+
 #imageindex:hover {
-  
   transform: scale(1.20);
- 
 }
 
 
