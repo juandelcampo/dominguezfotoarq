@@ -756,28 +756,28 @@ svg {
 
   .centered {
     position: absolute;
-    font-size: 9vw;
+    width: 30px;
     transform: translate(-50%, -120%);
-    color: rgb(243, 250, 216, 0.8);
-    font-family: 'Bebas Neue', cursive;
+    color: rgb(243, 250, 216, 0.7);
+    font-family: 'Gantari', cursive;
     z-index: 999;
-    line-height: normal;
-    top:98%;
-    left: 50%;
+    line-height: auto;
+    top:99%;
+    right: -50%;
     width: 100%;
-    text-shadow: 0px 9px 9px rgb(58, 58, 58);
+    filter: drop-shadow( 0px 5px 5px rgb(255, 255, 255, 0.3));
+    
   }
 
   .centered:hover {
-    font-family: 'Bebas Neue', cursive;
-    line-height: normal;
+   
     color: rgb(243, 250, 216, 0.8);
     animation: mymove 0.4s ease-in-out ;
 }
 
 @keyframes mymove {
     50% {
-        text-shadow: 0px 0px 5px  rgb(201, 201, 201);
+        filter: drop-shadow( 0px 5px 5px rgb(255, 255, 255, 0.9));
     }
 
     
@@ -785,15 +785,16 @@ svg {
   @media only screen and (max-width: 600px) {
     .centered {
         position: absolute;
-        font-size: 12vw;
-        transform: translate(-50%, -120%);
-        font-family: 'Bebas Neue', cursive;
-        z-index: 999;
-        line-height: normal;
-        top:85.5%;
-        left: 50%;
-        width: 100%;
-        text-shadow: 0px 7px 9px rgb(58, 58, 58);
+    font-size: 10vw;
+    transform: translate(-50%, -120%);
+    color: rgb(243, 250, 216, 0.1);
+    font-family: 'Gantari', cursive;
+    z-index: 999;
+    line-height: normal;
+    top:100%;
+    right: -50%;
+    width: 100%;
+    text-shadow: 0px 9px 9px rgb(58, 58, 58);
       }
   }
 
@@ -862,5 +863,3 @@ svg {
         margin-top:20rem;
       }
 
-footer.footer.mt-5 {
-}
