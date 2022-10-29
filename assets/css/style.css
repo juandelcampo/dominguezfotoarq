@@ -1011,3 +1011,42 @@ svg {
       margin-right: -10px;
     }
   }
+
+/**/
+
+.long-arrow-right,
+.long-arrow-left{
+  display: flex;
+  position:static;
+ 
+  margin: 30px auto;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+}
+
+.long-arrow-right{
+ transform: rotate(135deg);
+   float: right;
+  margin-right:4rem;
+}
+
+
+.long-arrow-left{
+ transform: rotate(-45deg);
+  float: left;
+  margin-left:4rem;
+}
+.long-arrow-right::after,
+.long-arrow-left::after{
+  content: "";
+  display: block;
+  width: 2px;
+  height: 45px;
+  background-color: black;
+  transform: rotate(-45deg) translate(15px, 4px);
+  left: 0;
+  top: 0;
+}
+
