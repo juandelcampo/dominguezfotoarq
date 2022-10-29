@@ -7,7 +7,7 @@ html {
     overflow-x: hidden;
 }
 a {
-    color: rgb(0, 0, 0);
+   
     text-decoration: none;
 }
 
@@ -218,6 +218,7 @@ h6,
     padding: 10px 15px;
     font-size: 12px;
     text-transform: uppercase;
+    margin-top:3rem ;
     color: #000;
     transition: 0.2s all ease;
     font-weight: 700;
@@ -343,21 +344,22 @@ h6,
 }
 
 .logo {
-    font-size: 10vw;
+    font-size: 12vw;
     font-family: 'Bebas Neue', cursive;
     line-height: normal;
     color: rgb(0, 0, 0);
+    z-index: 999;
 }
 
 .logo:hover {
     font-family: 'Bebas Neue', cursive;
     line-height: normal;
-    animation: mymove 2s ease-in-out;
+    animation: mymove2 1s ease-in-out;
 }
 
-@keyframes mymove {
+@keyframes mymove2 {
     50% {
-        text-shadow: 3px 4px 5px rgb(58, 58, 58);
+        text-shadow: 3px 4px 5px rgb(134, 134, 134);
     }
 }
 
@@ -544,7 +546,7 @@ svg {
 /* nav Bar */
 
 :root {
-    --background: rgb(255, 255, 255);
+    --background: rgb(255, 255, 255,0.95);
   }
   
   *, *::before, *::after {
@@ -621,15 +623,17 @@ svg {
   }
   
   nav ul {
-    margin: 0;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     padding: 0;
     list-style: none;
   }
   
   nav li {
-    margin-bottom: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
+    /* margin-bottom: 1em; */
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     align-items: center;
   }
   
@@ -721,8 +725,142 @@ svg {
    
 }
 
-.img-banner {
-    /* height: 100%; */
+.fade-in-3 {
+        opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 3s;
+
+}
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
+.pt-6 {
+    padding-top: 3rem !important;
+  }
+
+  .pt-7 {
+    padding-top: 4rem !important;
+  }
+
+
  
+  /* HERO */
+
+  .centered {
+    position: absolute;
+    font-size: 9vw;
+    transform: translate(-50%, -120%);
+    color: rgb(243, 250, 216, 0.8);
+    font-family: 'Bebas Neue', cursive;
+    z-index: 999;
+    line-height: normal;
+    top:98%;
+    left: 50%;
+    width: 100%;
+    text-shadow: 0px 9px 9px rgb(58, 58, 58);
+  }
+
+  .centered:hover {
+    font-family: 'Bebas Neue', cursive;
+    line-height: normal;
+    color: rgb(243, 250, 216, 0.8);
+    animation: mymove 0.4s ease-in-out ;
+}
+
+@keyframes mymove {
+    50% {
+        text-shadow: 0px 0px 5px  rgb(201, 201, 201);
+    }
+
+    
+}
+  @media only screen and (max-width: 600px) {
+    .centered {
+        position: absolute;
+        font-size: 12vw;
+        transform: translate(-50%, -120%);
+        font-family: 'Bebas Neue', cursive;
+        z-index: 999;
+        line-height: normal;
+        top:85.5%;
+        left: 50%;
+        width: 100%;
+        text-shadow: 0px 7px 9px rgb(58, 58, 58);
+      }
+  }
+
+
+  #hero1 {
+    background: url(https://i.postimg.cc/gj4q7f0L/index.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+   
+  }
+  
+  .hero, .content {
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .inner {
+    min-height: 90vh;
+    position: relative;
+  }
+
+    /* HERO */
+    .arrow-scroll {
+        color: #ffffff;
+        padding-bottom: 0.5rem;
+        font-size: 2rem;
+        text-shadow: 0px 1px 5px #ffffff;
+      }
+      .arrow-scroll__wrap {
+        display: inline-block;
+        transition: all ease-in-out 0.2s;
+        cursor: pointer;
+      }
+      .arrow-scroll__wrap:hover {
+        opacity: 0.5;
+      }
+      .arrow-scroll__wrap_animated {
+        animation: arrow-scroll 1.7s infinite ease;
+      }
+      @keyframes arrow-scroll {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-7px);
+        }
+        55% {
+          transform: translateY(-7px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      .mb-10{
+        margin-bottom: 10rem;
+      }
+
+      .mt-5{
+        margin-top:20rem;
+      }
+
+footer.footer.mt-5 {
+}
