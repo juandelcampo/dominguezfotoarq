@@ -55,6 +55,7 @@
 
     <body>
         <!-- ======= HEADER ======= -->
+
         <header
             class="pt-4 pb-4 text-center header"
             data-aos="fade-in"
@@ -101,6 +102,7 @@
                     /></a>
                 </div>
             </div>
+
             <a href="#main">
                 <i
                     class="bi bi-arrow-down arrow-scroll arrow-scroll__wrap arrow-scroll__wrap_animated fade-in-3"
@@ -272,7 +274,7 @@
                         </div>
 
                         <div
-                            class="item residential col-sm-6 col-md-4 col-lg-4 mb-4"
+                            class="item residential col-sm-6 col-md-4 col-lg-4"
                         >
                             <a
                                 href="viviendas-agrupadas.html"
@@ -284,7 +286,7 @@
                                 </div>
                                 <img
                                     alt="Viviendas Agrupadas"
-                                    class="img-fluid mb-10"
+                                    class="img-fluid"
                                     src="assets/img/viviendas-agrupadas/thumbnail1.jpg"
                                 />
                             </a>
@@ -318,5 +320,11 @@
 
         <!-- Template Main JS File -->
         <script src="assets/js/main.js"></script>
+
+        <script>
+            $(window).on('load', function () {
+                $('.loader-wrapper').fadeOut('slow')
+            })
+        </script>
     </body>
 </html>
