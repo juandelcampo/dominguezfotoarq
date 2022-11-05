@@ -48,6 +48,10 @@ a:hover {
     }
 }
 
+a {
+  color: rgb(41, 8, 126);
+}
+
 h1,
 h2,
 h3,
@@ -103,6 +107,8 @@ h6,
 
 .text-right {
     float: right;
+    text-align: right;
+    list-style: none;
 }
 
 .item {
