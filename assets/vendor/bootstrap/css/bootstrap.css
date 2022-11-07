@@ -558,8 +558,11 @@ progress {
 }
 
 .list-unstyled {
-  padding-left: 0;
+  position: absolute;
+  margin: 0;
   list-style: none;
+  list-style-type: none;
+  
 }
 
 .list-inline {
