@@ -301,15 +301,7 @@ h6,
     padding-top: 10px;
 }
 
-/* Contact Form */
-.php-email-form .error-message {
-    display: none;
-    color: #fff;
-    background: #ed3c0d;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-}
+
 
 
 @-webkit-keyframes animate-loading {
@@ -707,7 +699,7 @@ svg {
     nav a::before {
       content: '';
       display: block;
-      height: 5px;
+      height: 1px;
       background: black;
       position: absolute;
       top: -.75em;
@@ -1018,7 +1010,7 @@ svg {
     }
   }
 
-/**/
+/*ARROW*/
 
 .long-arrow-right,
 .long-arrow-left{

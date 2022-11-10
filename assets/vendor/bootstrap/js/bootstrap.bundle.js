@@ -6533,15 +6533,6 @@
 
   defineJQueryPlugin(ScrollSpy);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.1): tab.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * Constants
-   */
 
   const NAME$1 = 'tab';
   const DATA_KEY$1 = 'bs.tab';
